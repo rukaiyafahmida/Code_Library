@@ -1,20 +1,9 @@
-void print_each_digit(int x)
-{
-    if(x >= 10)
-       print_each_digit(x / 10);
-
-    int digit = x % 10;
-
-    cout << digit << '\n';
-}
-
-
-vector <int> v; 
+vector <int> v;
 
 int i = ....
 while(i != 0 ){
     cout << i%10 << " - "; // reverse order
-    v.push_back(i%10); 
+    v.push_back(i%10);
     i = i/10;
 }
 
@@ -22,4 +11,17 @@ cout << endl;
 
 for(int i=v.size()-1; i>=0; i--){
    cout << v[i] << " - "; // linear
+}
+
+
+
+
+void print_each_digit(int x)
+{
+    if(x >= 10)
+       print_each_digit(x / 10);
+
+    int digit = x % 10;
+
+    std::cout << digit << '\n';
 }
