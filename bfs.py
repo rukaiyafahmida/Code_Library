@@ -16,10 +16,10 @@ def bfs(graph, node):
     queue.append(node)
     # curr = node
     while queue:
-        curr = queue.pop()
+        curr = queue.pop(0)
         visited.append(curr)
         for adj in graph[curr]:
-            if adj not in visited:
+            if adj not in visited and adj not in queue:
                 queue.append(adj)
     return visited
     
