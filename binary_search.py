@@ -1,6 +1,8 @@
 import math
 
-def binary_search(target, arr):
+
+### Iterative
+def binary_search_iter(target, arr):
     f = 0
     b = len(arr)-1
 
@@ -16,4 +18,4 @@ def binary_search(target, arr):
 
 
 
-print(binary_search(target=15, arr=[1,3,5,7,10,11]))
+print(binary_search_iter(target=15, arr=[1,3,5,7,10,11]))
